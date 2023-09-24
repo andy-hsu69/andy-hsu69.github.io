@@ -31,6 +31,21 @@
 </head>
 
 <body>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode: Enabled";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode: Disabled";
+        }
+    </script>
+
 <h1>Andy Hsu CS Portfolio</h1>
 <p> College: University of Utah <br>
     Expected Graduation Date: Fall 2024<br>
@@ -41,23 +56,8 @@
 
 <img src="images/catNO.gif" alt="cattoNo">
 
-<h3 id="DarkModetext">Dark Mode is OFF</h3>
+<h3 id="DarkModetext">Dark Mode: Disabled</h3>
 <button onclick="darkMode()">Darkmode</button>
 <button onclick="lightMode()">LightMode</button>
-<script>
-    function darkMode() {
-        let element = document.body;
-        let content = document.getElementById("DarkModetext");
-        element.className = "dark-mode";
-        content.innerText = "Dark Mode is ON";
-    }
-    function lightMode() {
-        let element = document.body;
-        let content = document.getElementById("DarkModetext");
-        element.className = "light-mode";
-        content.innerText = "Dark Mode is OFF";
-    }
-</script>
-
 </body>
 </html>
