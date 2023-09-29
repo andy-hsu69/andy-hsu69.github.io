@@ -1,20 +1,37 @@
 <html>
-    <head>
-        <title>Andy Hsu CS Portfolio</title>
-        <link rel="stylesheet" href="style.css" /> 
-    </head>
-    <body>
-        <header id="header" class="site-header"> 
+
+<head>
+    <title>Andy Hsu CS Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="header" class="site-header">
         <h1 class="site-title">Andy Hsu CS Portfolio</h1>
         <nav class="site-navigation">
-        <ul class="nav-menu">
-        <li><a href-"index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="github.html">Contact</a></li> 
-        </ul>
-        </header> 
+            <ul class="nav-menu">
+                <li><a href-"index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="github.html">Contact</a></li>
+            </ul>
+    </header>
 
-        <article id="main" class="content"> 
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode: Enabled";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode: Disabled";
+        }
+    </script>
+
+    <article id="main" class="content">
 
         <h2>Computer Science Student at the University of Utah<br>
             Expected Graduation Date: Fall 2024
@@ -25,22 +42,22 @@
         </h3>
         <p>My name is Andy Hsu! I am a 5th-year student who is currently attending the University of Utah<br>
             Some hobbies of mine include: <br>
-                - videogaming (league of legend focus with experience on the JV team for the University of Utah) <br>
-                - occasional coding in free time <br>
-                - swimming!</p>
+            - videogaming (league of legend focus with experience on the JV team for the University of Utah) <br>
+            - occasional coding in free time <br>
+            - swimming!</p>
 
-      <h3 id="DarkModetext">Dark Mode: Disabled</h3>
-      <button onclick="darkMode()">Darkmode</button>
-      <button onclick="lightMode()">LightMode</button>
+        <h3 id="DarkModetext">Dark Mode: Disabled</h3>
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
 
-      <p><img src="images/catNO.gif" alt="Andy Hsu CS Portfolio at work" width="300px" /></p>
+        <p><img src="images/catNO.gif" alt="Andy Hsu CS Portfolio at work" width="300px" /></p>
 
-      </article> 
+    </article>
 
-      <footer>
-      <p>© 2023 Andy Hsu CS Portfolio. All Rights Reserved</p>
-      </footer> 
+    <footer>
+        <p>© 2023 Andy Hsu CS Portfolio. All Rights Reserved</p>
+    </footer>
 
-  </body>
+</body>
 
 </html>
