@@ -72,11 +72,13 @@ margin:50px 20px 50px 20px;
 
 .dark-mode {
     background-color: #3d3d3d;
+    content: #3d3d3d;
     color: white;
 }
 
 .light-mode {
     background-color: white;
+    content: white;
     color: black;
 }
  
